@@ -1,0 +1,161 @@
+/* ---------- Generalidades ---------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #22313f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    border-bottom: 2px solid #22313f;
+    padding-bottom: 8px;
+}
+
+/* ---------- Menú ---------- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #1abc9c;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: #16a085;
+}
+
+/* ---------- Formularios ---------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;
+    font-size: 14px;
+}
+input[type="color"] {
+    padding: 2px;
+    width: 60px;
+    height: 35px;
+}
+
+/* ---------- Botones ---------- */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button.eliminar {
+    background-color: #e74c3c;
+}
+
+button.eliminar:hover {
+    background-color: #c0392b;
+}
+
+/* ---------- Tablas ---------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #22313f;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #d9f5ef;
+}
+
+/* ---------- Mensajes ---------- */
+
+.mensaje {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

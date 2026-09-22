@@ -1,0 +1,233 @@
+{
+  "info": {
+    "_postman_id": "012ab7e2-9fb2-47f8-801c-f37863f7a5e8",
+    "name": "api-autos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58215184"
+  },
+  "item": [
+    {
+      "name": "Consultas",
+      "item": [
+        {
+          "name": "Obtener todas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos/913",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos",
+                "913"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Alta",
+      "item": [
+        {
+          "name": "Alta por ID",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 200,\r\n  \"marca\": \"Toyota\",\r\n  \"precio\": 35000,\r\n  \"color\": \"#FF0000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Alta automatica",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"marca\": \"Ford\",\r\n  \"precio\": 42000,\r\n  \"color\": \"#00AA00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Modificacion",
+      "item": [
+        {
+          "name": "Modificar auto (PUT)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"marca\": \"Toyota Modificado\",\r\n  \"precio\": 38000,\r\n  \"color\": \"#FFFF00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos/200",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Modificar auto (POST)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"marca\": \"Hyundai Modificado\",\r\n  \"precio\": 43000,\r\n  \"color\": \"#FFFF00\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "text"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos/modificar/200",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos",
+                "modificar",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Eliminacion",
+      "item": [
+        {
+          "name": "Eliminar auto(DELETE)",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos/200",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar auto (POST)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://api-autos-tgwd.onrender.com/autos/eliminar/2",
+              "protocol": "https",
+              "host": [
+                "api-autos-tgwd",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "autos",
+                "eliminar",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

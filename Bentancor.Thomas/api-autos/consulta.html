@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Automóviles</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/consulta.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Automóviles</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consulta.html">Consultar</a>
+        <a href="alta.html">Agregar</a>
+        <a href="modificar.html">Modificar</a>
+        <a href="eliminar.html">Eliminar</a>
+    </nav>
+
+    <main>
+        <h2>Consulta individual</h2>
+        <form id="formConsultaId">
+            <label for="idBuscar">ID a buscar:</label>
+            <input type="number" id="idBuscar" min="1" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="mensajeConsulta"></div>
+
+        <h2>Consulta general</h2>
+            <p id="contadorAutos"></p>
+                <table id="tablaAutos" border="1">
+                    <thead>
+                        <tr><th>ID</th><th>Marca</th><th>Precio</th><th>Color</th><th>Modificar / Eliminar</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+        
+    </main>
+
+</body>
+</html>

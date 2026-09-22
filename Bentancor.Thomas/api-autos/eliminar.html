@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Automóvil</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/eliminar.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Automóviles</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consulta.html">Consultar</a>
+        <a href="alta.html">Agregar</a>
+        <a href="modificar.html">Modificar</a>
+        <a href="eliminar.html">Eliminar</a>
+    </nav>
+
+    <main>
+        <h2>Buscar automóvil a eliminar</h2>
+
+        <form id="formBuscar">
+            <label for="idBuscar">ID:</label>
+            <input type="number" id="idBuscar" min="1" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="mensajeBusqueda"></div>
+
+        <div id="datosAuto" style="display:none;">
+            <h2>Datos del automóvil encontrado</h2>
+            <p><strong>ID:</strong> <span id="verId"></span></p>
+            <p><strong>Marca:</strong> <span id="verMarca"></span></p>
+            <p><strong>Precio:</strong> <span id="verPrecio"></span></p>
+            <p><strong>Color:</strong> <input type="color" id="verColor" disabled></p>
+
+            <button type="button" id="btnEliminar" class="eliminar">Eliminar</button>
+            <button type="button" id="btnCancelar">Cancelar</button>
+        </div>
+
+        <div id="mensajeEliminar"></div>
+    </main>
+
+</body>
+</html>
